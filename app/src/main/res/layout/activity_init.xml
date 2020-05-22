@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/padding">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:layout_marginBottom="@dimen/padding"
+                android:textSize="20sp"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a simple tool which lets you easily switch between your Housamo accounts(or should I say, AuthKeys)."
+                android:layout_marginBottom="@dimen/padding"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The app currently only supports two AuthKeys(a main and one alt). Just press the dumb-big SWITCH button to make the app switch keys and restart Housamo."
+                android:layout_marginBottom="@dimen/padding"/>
+
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you have any questions, feel free to ask me(@Jeik) in the Housamo Discord chat:"/>
+            <Button
+                android:onClick="discordInvite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HERE"
+                android:textColor="#ffffff"
+                android:background="#2c2f33"
+                android:layout_marginTop="@dimen/padding"/>
+
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCLAIMER"
+                android:textColor="#ff0000"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginBottom="@dimen/padding"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I SUGGEST THAT YOU USE ONLY THE APK PUBLISHED ON MY GITHUB('JeikWazAlreadyTaken'), BECAUSE OTHER ONES MIGHT BE TAMPERED WITH(NONE OF US, ESPECIALLY I, WANT THE WHOLE 'YOUR APP STOLE MY ACCOUNT' FIASCO TO OCCUR )."
+                android:textColor="#ff0000"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I AM NOT TO BE HELD RESPONSIBLE FOR ANY DAMAGE WHICH MAY BE CAUSED BY THE USE OF THIS APP!
+I WARMLY SUGGEST TO MAKE A BACKUP OF YOUR AUTHKEYS, BECAUSE SHIT CAN ALWAYS SOMEHOW HIT THE FAN."
+                android:textColor="#ff0000"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IF YOU DECIDE TO MANUALLY MODIFY YOUR AUTHKEYS, DELETE THIS APP BEFOREHAND AS IT WON'T TOLERATE A SCENARIO WHERE THE STORAGE DOESN'T MATCH THIS APP'S DATA."
+                android:textColor="#ff0000"
+                android:layout_marginBottom="@dimen/padding"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THE APP WAS HARDCODED INTO WORKING WITH ONLY TWO FILES WHICH HAVE 'AuthKey' IN THEIR NAMES. SCREW AROUND AT YOUR OWN RISK, I HAVE NO CLUE WHAT THE APP MIGHT DO."
+                android:textColor="#ff0000"
+                android:layout_marginBottom="@dimen/padding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#Ff0000"
+                android:textAlignment="center"
+                android:text="BEFORE CLICKING NEXT, RENAME YOUR MAIN KEY TO 'AuthKey' AND THE ALT ONE TO 'AuthKeyAlt' IN Android/data/jp.co.lifewonders.housamo/files/Data. THE APP WILL HANDLE THE REST AFTERWARDS."/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you agree to use this app at your own responsibility, choose 'Next'."
+                android:textColor="#ff0000"
+                android:layout_marginBottom="@dimen/padding"
+                android:layout_marginTop="@dimen/padding"/>
+            <Button
+                android:onClick="yeetOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
